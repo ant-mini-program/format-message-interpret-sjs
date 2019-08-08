@@ -1,0 +1,37 @@
+{
+  "name": "format-message-interpret-sjs",
+  "version": "0.1.0",
+  "description": "sjs version of format-message-interpret",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ant-mini-program/format-message-interpret-sjs.git"
+  },
+  "module": "pkg/index.sjs",
+  "files": [
+    "pkg"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "lint-staged": "^8.2.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.18.2",
+    "rollup": "^1.19.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "scripts": {
+    "prettier": "prettier --write \"src/**/*.{js,tsx}\"",
+    "lint-staged": "lint-staged",
+    "build": "rollup -c rollup.config.js",
+    "pub": "np --no-release-draft --yolo"
+  },
+  "lint-staged": {
+    "*.{tsx,js,jsx,ts}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "pre-commit": [
+    "lint-staged"
+  ]
+}

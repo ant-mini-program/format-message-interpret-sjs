@@ -1,0 +1,7 @@
+{
+  "name": "mini",
+  "private": true,
+  "dependencies": {
+    "format-message-interpret-sjs": "^0.1.0"
+  }
+}

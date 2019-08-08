@@ -1,0 +1,5 @@
+<import-sjs from="/locales.sjs" name="{t}"/>
+
+<view>{{t('name',{name},locale)}}</view>
+
+<view onTap="changeLang">{{t('change_lang', locale)}}</view>

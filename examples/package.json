@@ -1,0 +1,8 @@
+{
+  "name": "test",
+  "private": true,
+  "devDependencies": {
+    "format-message-parse": "^6.2.3",
+    "np": "^5.0.3"
+  }
+}
