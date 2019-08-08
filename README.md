@@ -5,6 +5,10 @@ sjs version of [format-message-interpret v6.2.3](https://www.npmjs.com/package/f
 
 ## usage
 
+```
+yarn add format-message-interpret-sjs
+```
+
 see [examples](./examples)
 
 locales.sjs: auto generated from json
