@@ -1,6 +1,6 @@
 {
   "name": "format-message-interpret-sjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "sjs version of format-message-interpret",
   "repository": {
     "type": "git",
