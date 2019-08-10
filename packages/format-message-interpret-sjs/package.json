@@ -1,0 +1,17 @@
+{
+  "name": "format-message-interpret-sjs",
+  "version": "0.1.0",
+  "description": "sjs version of format-message-interpret",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ant-mini-program/format-message-interpret-sjs.git"
+  },
+  "license": "MIT",
+  "files": [
+    "pkg"
+  ],
+  "scripts": {
+    "clean": "rm -rf pkg",
+    "build": "npm run clean && rollup -c"
+  }
+}

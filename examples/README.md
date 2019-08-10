@@ -1,4 +1,4 @@
-在 支付宝 IDE 中打开 src 目录并执行 npm i，其中 src/locales.sjs 由 build.js 将 i18n 目录中的语言资源 json 转换而来，
+在 支付宝 IDE 中打开 src 目录并执行 npm i，其中 src/locales.sjs 由 npm run build 将 i18n 目录中的语言资源 json 转换而来，
 在 pages/index/index.axml 中通过
 
 ````

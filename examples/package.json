@@ -2,7 +2,9 @@
   "name": "test",
   "private": true,
   "devDependencies": {
-    "format-message-parse": "^6.2.3",
-    "np": "^5.0.3"
+    "format-message-sjs-cli": "0.1.x"
+  },
+  "scripts": {
+    "build": "format-message-sjs-cli"
   }
 }

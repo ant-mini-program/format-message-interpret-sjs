@@ -11,22 +11,7 @@ yarn add format-message-interpret-sjs
 
 see [examples](./examples)
 
-locales.sjs: auto generated from json
-
-```js
-// auto generated
-import interpreter from 'format-message-interpret-sjs/pkg/index.sjs';
-
-var translations = {
-  "name":["name:",["name"]]
-};
-
-translations.name=interpreter(translations.name);
-
-export function t(key,args){
-  return translations[key](args);
-}
-```
+src/locales.sjs: auto generated from json by format-message-sjs-cli
 
 index.axml
 

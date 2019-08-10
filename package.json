@@ -1,29 +1,33 @@
 {
-  "name": "format-message-interpret-sjs",
+  "name": "root",
+  "private": true,
   "version": "0.1.0",
   "description": "sjs version of format-message-interpret",
   "repository": {
     "type": "git",
     "url": "git@github.com:ant-mini-program/format-message-interpret-sjs.git"
   },
-  "module": "pkg/index.sjs",
-  "files": [
-    "pkg"
-  ],
   "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "lerna": "^3.16.4",
     "lint-staged": "^8.2.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.18.2",
     "rollup": "^1.19.4",
-    "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-babel": "^4.3.3"
   },
   "scripts": {
-    "prettier": "prettier --write \"src/**/*.{js,tsx}\"",
+    "clean": "lerna run clean",
+    "bootstrap": "yarn workspaces run install",
+    "prettier": "prettier --write \"packages/**/*.{js,tsx}\"",
     "lint-staged": "lint-staged",
-    "build": "rollup -c rollup.config.js",
-    "pub": "np --no-release-draft --yolo"
+    "build": "lerna run build",
+    "pub": "git push && npm run npm-pub",
+    "npm-pub": "npm run build && lerna publish && npm run clean"
   },
   "lint-staged": {
     "*.{tsx,js,jsx,ts}": [

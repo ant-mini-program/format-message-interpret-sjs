@@ -4,15 +4,15 @@ import interpreter from 'format-message-interpret-sjs/pkg/index.sjs';
 const translations = {
 
   'en-US':{
-    name:interpreter(["name: ",["name"]]),
+    'name':function(args) {const f=translations['en-US']['name']=interpreter(["name: ",["name"]]);return f(args);},
     
-    change_lang:interpreter(["change language"]),
+    'change_lang':function(args) {const f=translations['en-US']['change_lang']=interpreter(["change language"]);return f(args);},
     },
   
   'zh-CN':{
-    name:interpreter(["姓名: ",["name"]]),
+    'name':function(args) {const f=translations['zh-CN']['name']=interpreter(["姓名: ",["name"]]);return f(args);},
     
-    change_lang:interpreter(["修改语言"]),
+    'change_lang':function(args) {const f=translations['zh-CN']['change_lang']=interpreter(["修改语言"]);return f(args);},
     },
   
 }

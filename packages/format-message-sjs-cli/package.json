@@ -1,0 +1,20 @@
+{
+  "name": "format-message-sjs-cli",
+  "version": "0.1.0",
+  "description": "cli of format-message-interpret",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ant-mini-program/format-message-interpret-sjs.git"
+  },
+  "license": "MIT",
+  "bin": {
+    "format-message-sjs-cli": "index.js"
+  },
+  "scripts": {
+    "clean": "echo ok",
+    "build": "echo ok"
+  },
+  "dependencies": {
+    "format-message-parse": "^6.2.3"
+  }
+}
