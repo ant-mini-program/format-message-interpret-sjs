@@ -12,7 +12,6 @@ type Placeholder = any[] // https://github.com/facebook/flow/issues/4050
 export type Type = (Placeholder, Locales) => (any, ?Object) => any
 export type Types = { [string]: Type }
 */
-
 export default function interpret(
   ast /*: AST */,
   locale /*:: ?: Locales */,

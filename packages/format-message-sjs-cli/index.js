@@ -1,11 +1,9 @@
 #!/usr/bin/env node
-
-const cwd = process.cwd();
-
 const parse = require('format-message-parse');
 const fs = require('fs');
 const path = require('path');
 
+const cwd = process.cwd();
 const i18nDir = path.join(cwd, 'i18n');
 const files = fs.readdirSync(i18nDir);
 let code = `import interpreter from 'format-message-interpret-sjs/pkg/index.sjs';
