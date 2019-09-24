@@ -23,8 +23,6 @@ index.axml
 
 ## Supported ICU Formats
 
-From IDE (0.70)
-
 - plural
 - selectordinal
 - select

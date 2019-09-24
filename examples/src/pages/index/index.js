@@ -1,6 +1,7 @@
 Page({
   data: {
     name: 'yiminghe',
+    gender: 'male',
     locale: 'zh-CN',
   },
   changeLang() {

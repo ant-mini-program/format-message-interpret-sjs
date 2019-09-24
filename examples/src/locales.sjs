@@ -6,11 +6,15 @@ const translations = {
   'en-US':{
     'name':function(args) {const f=translations['en-US']['name']=interpreter(["name: ",["name"]]);return f(args);},
     
+    'gender':function(args) {const f=translations['en-US']['gender']=interpreter(["gender: ",["gender","select",{"male":["He"],"female":["She"],"other":["Wo"]}]]);return f(args);},
+    
     'change_lang':function(args) {const f=translations['en-US']['change_lang']=interpreter(["change language"]);return f(args);},
     },
   
   'zh-CN':{
     'name':function(args) {const f=translations['zh-CN']['name']=interpreter(["姓名: ",["name"]]);return f(args);},
+    
+    'gender':function(args) {const f=translations['zh-CN']['gender']=interpreter(["性别：",["gender","select",{"male":["他"],"female":["她"],"other":["咋"]}]]);return f(args);},
     
     'change_lang':function(args) {const f=translations['zh-CN']['change_lang']=interpreter(["修改语言"]);return f(args);},
     },

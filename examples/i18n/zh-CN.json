@@ -1,4 +1,5 @@
 {
   "name": "姓名: {name}",
+  "gender": "性别：{gender, select, male {他} female {她} other {咋}}",
   "change_lang": "修改语言"
 }
